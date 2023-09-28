@@ -1,5 +1,5 @@
 <template>
-  <section class="event-list">
+  <div>
     <div v-for="event in events" :key="event.id" class="event-card">
       <h2 :class="eventClass(event.name)">{{ event.name }}</h2>
       <div class="event-details">
@@ -9,7 +9,7 @@
         <button @click="selectEvent(event)">RSVP</button>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
